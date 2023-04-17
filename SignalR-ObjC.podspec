@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   s.name         = "SignalR-ObjC"
-  s.version      = "2.0.2"
+  s.version      = "2.1.0"
   s.summary      = "Objective-C Client for the SignalR Project works with iOS and Mac."
   s.homepage     = "https://github.com/DyKnow/SignalR-ObjC"
   s.license      = 'MIT'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |sp|
     sp.source_files = 'Framework/*.{h}', 'SignalR.Client/**/*.{h,m}'
-    sp.dependency 'AFNetworking', '~>2.0'
+    sp.dependency 'AFNetworking', '~>3.0'
     sp.dependency 'SocketRocket', '~>0.4'
   end
 
